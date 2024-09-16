@@ -1,0 +1,448 @@
+<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+
+rel="stylesheet">
+
+<link rel="stylesheet" href="./static/css/bulma.min.css">
+
+<link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+
+<link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+
+<link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+
+<link rel="stylesheet"
+
+href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="./static/css/index.css">
+
+<link rel="icon" href="./static/images/favicon.svg">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script defer src="./static/js/fontawesome.all.min.js"></script>
+
+<script src="./static/js/bulma-carousel.min.js"></script>
+
+<script src="./static/js/bulma-slider.min.js"></script>
+
+<script src="./static/js/index.js"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+
+<div class="navbar-brand">
+
+<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+
+<span aria-hidden="true"></span>
+
+<span aria-hidden="true"></span>
+
+<span aria-hidden="true"></span>
+
+</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-body">
+
+<div class="container is-max-desktop">
+
+<div class="columns is-centered">
+
+<div class="column has-text-centered">
+
+<h1 class="title is-1 publication-title">Motion Reconstruction via Human Anatomy Diffusion from Sparse Tracking</h1>
+
+<div class="is-size-5 publication-authors">
+
+<span class="author-block">
+
+<a href="">Zehai Niu</a><sup>1</sup>,</span>
+
+<span class="author-block">
+
+<a href="">Ke Lu</a><sup>1,2</sup>,</span>
+
+<span class="author-block">
+
+<a href="">Kun Dong</a><sup>1</sup>,
+
+</span>
+
+<span class="author-block">
+
+<a href="">Jian Xue</a><sup>1</sup>,
+
+</span>
+
+<span class="author-block">
+
+<a href="">Xiaoyu Qin</a><sup>3</sup>,
+
+</span>
+
+<span class="author-block">
+
+<a href="">Jinbao Wang</a><sup>4</sup>,
+
+</span>
+
+</div>
+<div class="is-size-5 publication-authors">
+    <span class="author-block"><sup>1</sup>University of Chinese Academy of Sciences, Beijing, China,</span>
+    <span class="author-block"><sup>2</sup>Peng Cheng Laboratory, Shenzhen, China,</span>
+    <span class="author-block"><sup>3</sup>Tsinghua University, Beijing, China,</span>
+    <span class="author-block"><sup>4</sup>Shenzhen University, Shenzhen, China</span>
+  </div>
+
+  <div class="column has-text-centered">
+    <div class="publication-links">
+      <!-- PDF Link. -->
+      <span class="link-block">
+        <a href="files/had.pdf"
+           class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+              <i class="fas fa-file-pdf"></i>
+          </span>
+          <span>Paper</span>
+        </a>
+      </span>
+      <!-- Supplemental Material Link. -->
+      <span class="link-block">
+        <a href="files/had_supp.pdf" 
+           class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+              <i class="fas fa-file-pdf"></i>
+          </span>
+          <span>Supplemental</span>
+        </a>
+      </span>
+      <!-- Video Link. -->
+      <span class="link-block">
+        <a href="files/had_video.mp4"
+           class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+              <i class="fab fa-youtube"></i>
+          </span>
+          <span>Video</span>
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="hero teaser">
+
+<div class="container is-max-desktop">
+
+<div class="hero-body">
+
+<img id="teaser" src="./static/images/titleimg.jpg" alt="Title Image" style="width: 100%; height: auto;">
+
+<h2 class="subtitle has-text-centered">
+
+Sequential visualization of full-body pose estimation using the Human Anatomy Diffusion method from sparse tracking inputs. The red coordinate axes represent the head-mounted display (HMD) tracking, while the green and blue coordinate axes correspond to the left and right hand tracking, respectively. The Human Anatomy Diffusion represents a full-body motion capture technology applicable to VR or AR environments.
+
+</h2>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+    <div class="container is-max-desktop">
+    
+    <!-- Abstract. -->
+    
+    <div class="columns is-centered has-text-centered">
+    
+    <div class="column is-four-fifths">
+    
+    <h2 class="title is-3">Abstract</h2>
+    
+    <div class="content has-text-justified">
+    
+    <p>
+    
+    In the research field of analysis of people, generating precise full-body human motion from sparse tracking is a significant challenge. It is well known that diffusion techniques excel in generating high-quality two-dimensional (2D) visual content. However, when applied to human motion reconstruction, they might struggle to capture the inherent complexities of human motion, which is characterized by three-dimensional (3D) anatomical features and one-dimensional (1D) temporal dynamics. This heterogeneous structure between human motion and images can lead to accumulated errors at the joints, affecting the accuracy and smoothness of the generated motions. Building on this insight, we propose Human Anatomy Diffusion (HAD), a novel framework that integrates human anatomical features into the denoising process and excels in handling complex motions, accurately capturing body angles and balance, and showing enhanced alignment in motion prediction. HAD remarkably advanced the performance of motion reconstruction, notably enhancing smoothness by 81.29% compared to the previous state-of-the-art works and improving key accuracy metrics like MPJPE, Root PE, and Lower PE by approximately 20% on AMASS. Our method provides a crucial advancement for creating realistic and responsive virtual avatars in real-world applications.
+    
+    </p>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    <!--/ Abstract. -->
+
+    <!-- Method. -->
+<div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Method</h2>
+      <div class="content has-text-justified">
+        <p>
+          We propose Human Anatomy Diffusion (HAD), a novel framework that integrates human anatomical features into the denoising process for motion reconstruction from sparse tracking. HAD consists of two key components: the Human Anatomy Network (HAN) and the Human Anatomy Diffusion process.
+        </p>
+        <img src="files/had.jpg" alt="Human Anatomy Diffusion" style="width: 100%; height: auto;">
+        <p>
+          The Human Anatomy Network (HAN) is structured into four modules: Latent Space Mapping (LSM), Iterative Feature Enhancement (IFE), Temporal Feature Pyramid (TFP), and Hierarchical Motion Refinement (HMR).
+        </p>
+        <img src="files/pipeline.jpg" alt="Human Anatomy Network Pipeline" style="width: 100%; height: auto;">
+        <ul>
+          <li>LSM maps the input features into a unified latent space for subsequent processing.</li>
+          <li>IFE takes the coarse features from LSM as input and enhances them for better representation.</li>
+          <li>TFP is applied to integrate multi-scale temporal motion features and output coarse predictions.</li>
+          <li>HMR adopts a hierarchical architecture inspired by the human body structure to refine the obtained predictions for more natural and accurate motion.</li>
+        </ul>
+        <p>
+          The Human Anatomy Diffusion process is divided into two phases: Parallel Motion Regression (PMR) and Alternate Motion Refinement (AMR).
+        </p>
+        <ul>
+          <li>PMR utilizes two specialized predictions, Smooth Prediction (SP) and Accurate Prediction (AP), to generate both smooth and accurate motion predictions simultaneously.</li>
+          <li>AMR further refines the predictions by applying the two predictions alternately.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--/ Method. -->
+  
+  <!-- Results. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Results</h2>
+      <div class="publication-video">
+        <video poster="" id="results-video" controls>
+          <source src="files/had_video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          Our method significantly outperforms the state-of-the-art approaches on the AMASS dataset, as shown in the quantitative results below:
+        </p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>MPJRE &darr;</th>
+              <th>MPJPE &darr;</th>
+              <th>MPJVE &darr;</th>
+              <th>Hand PE &darr;</th>
+              <th>Upper PE &darr;</th>
+              <th>Lower PE &darr;</th>
+              <th>Root PE &darr;</th>
+              <th>Jitter &darr;</th>
+              <th>Upper Jitter &darr;</th>
+              <th>Lower Jitter &darr;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>LoBSTr</td>
+              <td>10.69</td>
+              <td>9.02</td>
+              <td>44.97</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>CoolMoves</td>
+              <td>5.20</td>
+              <td>7.83</td>
+              <td>100.54</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>VAE-HMD</td>
+              <td>4.11</td>
+              <td>6.83</td>
+              <td>37.99</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>AvatarPoser</td>
+              <td>3.08</td>
+              <td>4.18</td>
+              <td>27.70</td>
+              <td>2.12</td>
+              <td>1.81</td>
+              <td>7.59</td>
+              <td>3.34</td>
+              <td>14.49</td>
+              <td>7.36</td>
+              <td>24.81</td>
+            </tr>
+            <tr>
+              <td>DAP</td>
+              <td>2.69</td>
+              <td>3.68</td>
+              <td>24.03</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>AGRoL-MLP</td>
+              <td>2.69</td>
+              <td>3.93</td>
+              <td>22.85</td>
+              <td>2.62</td>
+              <td>1.89</td>
+              <td>6.88</td>
+              <td>3.35</td>
+              <td>13.01</td>
+              <td>9.13</td>
+              <td>18.61</td>
+            </tr>
+            <tr>
+              <td>AGRoL</td>
+              <td>2.66</td>
+              <td>3.71</td>
+              <td>18.59</td>
+              <td>1.31</td>
+              <td>1.55</td>
+              <td>6.84</td>
+              <td>3.36</td>
+              <td>7.26</td>
+              <td>5.88</td>
+              <td>9.27</td>
+            </tr>
+            <tr>
+              <td>HAN-SP (Ours)</td>
+              <td>2.41</td>
+              <td>3.31</td>
+              <td>16.59</td>
+              <td>1.75</td>
+              <td>1.50</td>
+              <td>5.91</td>
+              <td>2.87</td>
+              <td>4.69</td>
+              <td>3.93</td>
+              <td>5.78</td>
+            </tr>
+            <tr>
+              <td>HAN-AP (Ours)</td>
+              <td>2.40</td>
+              <td>3.18</td>
+              <td>16.42</td>
+              <td>1.15</td>
+              <td>1.37</td>
+              <td>5.79</td>
+              <td>2.90</td>
+              <td>7.35</td>
+              <td>5.66</td>
+              <td>9.79</td>
+            </tr>
+            <tr>
+              <td><strong>HAD (Ours)</strong></td>
+              <td><strong>2.29</strong></td>
+              <td><strong>3.03</strong></td>
+              <td><strong>15.45</strong></td>
+              <td><strong>1.15</strong></td>
+              <td><strong>1.30</strong></td>
+              <td><strong>5.52</strong></td>
+              <td><strong>2.71</strong></td>
+              <td><strong>4.61</strong></td>
+              <td><strong>3.86</strong></td>
+              <td><strong>5.70</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          HAD achieves remarkable improvements in accuracy and smoothness metrics compared to previous methods. It reduces MPJRE by 14.29%, MPJPE by 18.87%, and MPJVE by 16.46%. Additionally, it improves the motion accuracy of the hands, upper body, and lower body by 8.4%, 15.48%, and 19.88%, respectively. The overall jitter is reduced by 81.29% compared to the previous state-of-the-art.
+        </p>
+        <p>  
+          The qualitative results demonstrate HAD's ability to generate accurate and natural human motions from sparse tracking inputs, even for complex and dynamic actions.
+        </p>
+        <img src="files/vis.jpg" alt="Qualitative Results" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </div>
+  <!--/ Results. -->
+
+</div>
+
+</section>
+
+<section class="section" id="BibTeX">
+
+<div class="container is-max-desktop content">
+
+<h2 class="title">BibTeX</h2>
+
+<pre><code>@article{niu2024motionreconstruction,
+
+author = {Niu, Zehai and Lu, Ke and Dong, Kun and Xue, Jian and Qin, Xiaoyu and Wang, Jinbao},
+
+title = {Motion Reconstruction via Human Anatomy Diffusion from Sparse Tracking},
+
+journal = {ECCV Workshop},
+
+year = {2024},
+
+}</code></pre>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="content has-text-centered">
+
+<p>
+
+This website template was borrowed from the <a href="https://nerfies.github.io/">Nerfies</a> project page.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>
